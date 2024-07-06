@@ -4,7 +4,7 @@ var path = require('path')
 const bodyParser = require("body-parser");
 let multer = require('multer');
 let upload = multer();
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const db = require('/views/DbConfig.js');
 
 router.use(express.static("views"));
