@@ -33,6 +33,12 @@ router.get('/sucess',(req,res) => {
     res.render("../views/sucess");
 })
 
+
+router.get('/health',(req,res) => {
+
+  res.status(200).send(" Health check success");
+});
+
 router.post('/submit',upload.fields([]),(req,res) => {
 
     const body = req.body;
